@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGrasps Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id="title">EGrasps Wants To Know About Your Opinion!</h1>
+    <p id="description">We love to know about what you are interested in and what are your expectations from us.</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Enter Your Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@email.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="Min age 12+">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>Your area of expertize: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="">(Select one)</option>
+                <option value="finance">Finance</option>
+                <option value="technology">Technology</option>
+                <option value="videoEditing">Video Editing</option>
+                <option value="scriptWriting">Script Writing</option>
+                <option value="softwareDeveloper">Software Development</option>
+                <option value="seo">Search Engine Optiomization</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="profession-label"><b>What Is Your Profession?</b></label><br>
+            <input type="radio" class="radio-inline" name="gender" value="freelanceVideoEditor" checked> Freelance Video Editor<br>
+            <input type="radio" class="radio-inline" name="gender" value="softwareDeveloper"> Software Developer<br>
+            <input type="radio" class="radio-inline" name="gender" value="seoSpecialist"> SEO Specialist<br>
+            <input type="radio" class="radio-inline" name="gender" value="student"> Student<br>
+            <input type="radio" class="radio-inline" name="gender" value="financeAdvisor"> Finance Advisor
+          </div>
+          <div id="button-area"><br>
+            <label id="suggestions-label"><b>Suggestions for our future growth: </b></label><br>
+            <input type="checkbox" name="suggestion1" value="blogContent" > Improve content of blogs<br>
+            <input type="checkbox" name="suggestion2" value="youtubeContent"> Improve YouTube Videos and Edit them properly<br>
+            <input type="checkbox" name="suggestion3" value="personalSessions"> Conduct Personal Sessions<br>
+            <input type="checkbox" name="suggestion3" value="hireNewTalent"> Hire More Efficient & Knowledgeable People
+          </div>
+
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>Best Thing About Us: </strong></label><br>
+            <select id="dropdown" name="bestThing" class="form"><br><br>
+                <option value="">(select one)</option>
+                <option value="blogging">Blogs of Advanced Topics and Teaching it in easy way</option>
+                <option value="youtubeVideos">YouTube Videos with Real Life Examples</option>
+                <option value="personalMentoring">Personal Mentoring</option>
+                <option value="groupSessions">Group Sessoions</option>
+                <option value="webinars">Webinars</option>
+                </select>
+         </div>
+          <div id="ending"><br><br>
+            <label id="comments-label">Any other suggestions or comments?</label><br>
+            <textarea style= height:120px;" class="form" placeholder="Your suggestions here..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+</body>
+</html>
